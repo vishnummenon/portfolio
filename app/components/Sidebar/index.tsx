@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ScrollLock from "react-scrolllock";
 
-import SkillSet from './SkillSet';
+import SkillSet from "./SkillSet";
 import SocialConnection from "./SocialConnection";
 import ProfilePicture from "./ProfilePicture";
 import Resume from "./Resume";
@@ -16,7 +16,11 @@ const Sidebar: FC<SidebarProps> = ({ isOPen, handleClose }: SidebarProps) => {
 
   return (
     <ScrollLock>
-      <div className="fixed top-16 left-0 h-screen w-1/6 bg-gray-700 opacity-75 z-50">
+      <div
+        className={`fixed top-16 left-0 h-screen w-full md:w-1/6 bg-gray-700 z-50 transition duration-300 ease-in-out transform translate-x-0 md:translate-x-0 overflow-y-auto md:overflow-y-hidden ${
+          isOPen ? "" : "-translate-x-full"
+        }`}
+      >
         <div className="top-0 right-0 p-2">
           <button
             className="text-white hover:text-gray-200 focus:outline-none mt-2"
