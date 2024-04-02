@@ -8,7 +8,7 @@ const Resume: FC = () => {
     <div className="flex mt-20 justify-center">
     <a
       href="https://drive.google.com/file/d/1uHXIphytw3Y0OI5_DX3oVxpWK2Xowuj9/view?usp=sharing"
-      className="text-white hover:text-gray-200 underline no-underline"
+      className="text-blue-400 hover:text-blue-600 bg-white p-4 rounded"
       target="_blank"
     >
       View My Resume
