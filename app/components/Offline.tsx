@@ -1,23 +1,17 @@
 import { FC } from "react";
+import { blogPosts } from "../constants/blogs";
+import BlogSnippet from "./BlogSnippet";
 
 const Offline: FC = () => {
   return (
     <section id="offline" className="offline h-screen flex flex-col justify-center items-center">
       <h2 className="font-mono">I write, and therefore I am!</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu
-        nulla magna. Donec vitae odio quam. Pellentesque euismod magna non mi
-        ipsum. Donec bibendum est at turpis sollicitudin finibus. Donec faucibus
-        leo nec urna fermentum rutrum. Aenean eu leo quam. Pellentesque pharetra
-        tempor enim eu lectus pretium at molestie eget. Morbi leo risus, porta
-        ac consectetur ac, vestibulum at eros. Nam eget dui.
-      </p>
-      <p>
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-        Donec sed odio dui. Aenean eu leo quam. Pellentesque pharetra tempor
-        enim eu lectus pretium at molestie eget. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros. Nam eget dui.
-      </p>
+      <div className="my-20 w-full md:w-4/5">
+        <h6 className="font-mono italic">Check out some of the crowd favorite posts in my blog...</h6>
+        <div className="flex justify-evenly flex-wrap my-8">
+        {blogPosts.map((blog) => <BlogSnippet key={blog.title} blog={blog} />)}
+        </div>
+      </div>
     </section>
   );
 };
