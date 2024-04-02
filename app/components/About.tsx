@@ -3,7 +3,7 @@ import { FC } from "react";
 const About: FC = () => {
   return (
     <section id="about" className="about h-screen flex flex-col justify-center items-center">
-      <h2>About Me</h2>
+      <h2 className="font-mono">About Me</h2>
       <p className="text-xl my-10 italic text-gray-300 font-mono">
         I write code, and something more...
       </p>
