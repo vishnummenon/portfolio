@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Experience: FC = () => {
   return (
-    <section id="experience" className="experience">
+    <section id="experience" className="experience h-screen flex flex-col justify-center items-center">
       <h2>My Experience</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu

@@ -39,11 +39,11 @@ const Navbar: FC = () => {
       <div className="flex space-x-4">
       {sections.map((section) => (
         <Link
-          key={section}
+          key={section.key}
           className="hover:text-gray-200"
-          href={`#${section.toLowerCase()}`}
+          href={`#${section.key}`}
         >
-          {section}
+          {section.value}
         </Link>
       ))}
       </div>

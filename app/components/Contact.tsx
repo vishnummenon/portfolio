@@ -1,8 +1,8 @@
 import { FC } from "react";
 
-const Contact: FC = () => {
+const Offline: FC = () => {
   return (
-    <section id="contact" className="contact">
+    <section id="offline" className="offline h-screen flex flex-col justify-center items-center">
       <h2>Get in Touch!</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu
@@ -22,4 +22,4 @@ const Contact: FC = () => {
   );
 };
 
-export default Contact;
+export default Offline;
