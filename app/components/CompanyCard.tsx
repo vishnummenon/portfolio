@@ -12,7 +12,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ org }: CompanyCardProps) => {
   return (
     <div
       id="company-card-container"
-      className="bg-white opacity-75 hover:opacity-100 rounded my-8 p-4 z-50 border-2 border-cyan-200 border-solid"
+      className="bg-white opacity-75 hover:opacity-100 rounded my-8 p-4 border-2 border-cyan-200 border-solid"
     >
       <div className="flex">
         <Image

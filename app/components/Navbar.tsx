@@ -28,7 +28,7 @@ const Navbar: FC = () => {
 
   return (
     <nav
-      className={`flex items-center justify-between h-16 bg-cyan-600 px-4 ${isSticky ? 'sticky top-0' : ''}`}
+      className={`flex items-center justify-between h-16 bg-cyan-600 px-4 z-50 ${isSticky ? 'sticky top-0' : ''}`}
       id="navbar"
     >
       <div className="flex items-center cursor-pointer" onClick={handleSidebarToggle}>
