@@ -3,7 +3,7 @@ import { FC } from "react";
 const Offline: FC = () => {
   return (
     <section id="offline" className="offline h-screen flex flex-col justify-center items-center">
-      <h2>Get in Touch!</h2>
+      <h2 className="font-mono">I write, and therefore I am!</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu
         nulla magna. Donec vitae odio quam. Pellentesque euismod magna non mi
