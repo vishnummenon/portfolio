@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { FC, useCallback, useEffect, useState } from "react";
 
+// @ts-ignore
+import { Link as ReactScrollLink } from "react-scroll";
+
 import { sections } from "../constants/sections";
 import Sidebar from "./Sidebar";
 
@@ -38,13 +41,17 @@ const Navbar: FC = () => {
       </div>
       <div className="flex space-x-4">
       {sections.map((section, index) => (
-        <Link
+        <ReactScrollLink
           key={section.key}
           className={`hover:text-gray-200 font-mono border-white pr-2 ${index !== (sections.length-1) ? 'border-r-2' : ''}`}
-          href={`#${section.key}`}
+          to={section.key}
+          spy
+          smooth
+          duration={300}
+          offset={-100}
         >
           {section.value}
-        </Link>
+        </ReactScrollLink>
       ))}
       </div>
       <Sidebar isOPen={isSidebarOpen} handleClose={handleSidebarToggle} />
