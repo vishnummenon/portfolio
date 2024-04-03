@@ -6,8 +6,8 @@ import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 
 const SkillSet: FC = () => {
   return (
-    <section className="mt-12 ml-12">
-      <strong className="text-2xl font-mono">Skillset!</strong>
+    <section className="mt-12 flex justify-center flex-col items-center">
+      <strong className="text-2xl font-mono self-start ml-10">Skillset!</strong>
       <div className="flex items-center mt-4">
         <h6 className="font-mono">Proficient</h6> <FontAwesomeIcon icon={faStar} className="ml-4" />
       </div>

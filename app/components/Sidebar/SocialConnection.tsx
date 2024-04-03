@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const SocialConnection: FC = () => {
     return (
-      <div className="fixed lg:bottom-20 pl-10 ml-4">
+      <div className="fixed pb-20 mt-10 md:mt-0 md:bottom-20 pl-10 flex flex-col justify-center">
       <h4 className="font-mono">Connect with me ❤</h4>
       <div className="flex mt-4 justify-center">
         <a href="https://www.linkedin.com/in/vishnu-m-menon-54189524/" target="_blank" className="mx-2">

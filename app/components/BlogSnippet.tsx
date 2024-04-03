@@ -13,7 +13,7 @@ const BlogSnippet: FC<BlogSnippetProps> = ({ blog }: BlogSnippetProps) => {
   const openLinkInNewTab = () => window.open(url, '_blank');
 
   return (
-    <div className="w-full md:w-1/4 border-solid border-2 border-cyan-600 rounded flex flex-col">
+    <div className="w-full md:w-1/4 mb-10 md:mb-0 border-solid border-2 border-cyan-600 rounded flex flex-col">
       <div className="bg-cyan-600 p-2">
         <h1 className="self-start font-mono font-bold">
           {`${title} - (${genre})`}
