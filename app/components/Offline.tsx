@@ -6,7 +6,7 @@ const Offline: FC = () => {
   return (
     <section
       id="offline"
-      className="offline mt-20 md:mt-0 md:h-dvh flex flex-col justify-center items-center"
+      className="offline mt-20 md:mt-0 md:min-h-dvh flex flex-col justify-center items-center"
     >
       <h2 className="font-mono">I write, and therefore I am!</h2>
       <div className="my-20 w-full md:w-4/5">

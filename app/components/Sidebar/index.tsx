@@ -17,7 +17,7 @@ const Sidebar: FC<SidebarProps> = ({ isOPen, handleClose }: SidebarProps) => {
   return (
     <ScrollLock>
       <div
-        className={`fixed top-16 left-0 md:h-dvh w-full md:w-1/6 bg-cyan-900 z-50 transition duration-300 ease-in-out transform translate-x-0 md:translate-x-0 overflow-y-auto md:overflow-y-hidden ${
+        className={`fixed top-16 left-0 md:min-h-dvh w-full md:w-1/6 bg-cyan-900 z-50 transition duration-300 ease-in-out transform translate-x-0 md:translate-x-0 overflow-y-auto md:overflow-y-hidden ${
           isOPen ? "" : "-translate-x-full"
         }`}
       >
